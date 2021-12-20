@@ -1,9 +1,17 @@
 {
   "name": "pixivExtension",
-  "description": "pixiv用補助機能。①「人気のタグ」のサムネイルhrefを書き換え機能。②コンテキストメニューに選択文字列をpixivで検索する機能。",
+  "description": "pixiv用補助機能。pixiv「人気のタグ」のサムネイルhrefを書き換えます。ついでにコンテキストメニューに選択文字列をpixivで検索する機能を追加します。",
   "version": "1.0",
   "manifest_version": 3,
   
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.pixiv.net/*"
+      ],
+      "js": ["index.js"]
+    }
+  ],
   "background": {
     "service_worker": "background.js"
   },
