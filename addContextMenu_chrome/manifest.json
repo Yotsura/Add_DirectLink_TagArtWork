@@ -1,0 +1,18 @@
+{
+  "name": "pixivExtension",
+  "description": "pixiv用補助機能。①「人気のタグ」のサムネイルhrefを書き換え機能。②コンテキストメニューに選択文字列をpixivで検索する機能。",
+  "version": "1.0",
+  "manifest_version": 3,
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "scripting"
+  ],
+  "icons": {
+    "48": "img/logo_icon.png"
+  }
+}

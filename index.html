@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>弓張月|寄弦-作成物</title>
+</head>
+<body>
+	<div>
+		<h1>Add_DirectLink_TagArtWork</h1>
+		
+		<h2>弓張月/<small>寄弦</small></h2>
+		<p>pixivで表示される「人気のイラスト」に表示されている作品を直接開く機能を追加。</p>
+		<p>
+			pixiv内で右クリックし、コンテキストメニューから以下の順でメニューを選んで実行。<br>
+			tampermonkey＞Add DirectLink to TagArtWork<br>
+			hrefの書き換えだけ実行します。<br>
+			以下いずれかの別タブで開く操作で直接作品ページが開くようになります。
+		</p>
+		<ul>
+			<li>マウスホイールクリック</li>
+			<li>Ctrlを押しながらクリック</li>
+			<li>右クリックしコンテキストメニュー「新しいタブで画像を開く」</li>
+		</ul>
+		
+		<h2>導入方法</h2>
+		<h3>tampermonkeyありver</h3>
+		<ol>
+			<li>拡張機能「<a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ja">tampermonkey</a>」をchromeにインストール</li>
+			<li><a href="./Add_DirectLink_TagArtWork.user.js">tampermonkey用のコードをインストール</a></li>
+		</ol>
+		<h3>tampermonkeyなしver</h3>
+		<ol>
+			<li><a href="https://github.com/Yotsura/Add_DirectLink_TagArtWork" target="_brank">Githubのページ</a>、Codeボタン → Download Zip でDLして解凍</li>
+			<li>Chrome拡張機能管理画面に移動。（Chrome検索窓に「chrome://extensions/」を入力してEnter）</li>
+			<li>「パッケージ化されていない拡張機能を読み込む」をクリック</li>
+			<li>解凍したフォルダ内の「addContextMenu_chrome」フォルダを選択して追加完了</li>
+		</ol>
+	</div>
+</body>
+</html>
